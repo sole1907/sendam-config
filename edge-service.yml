@@ -52,14 +52,13 @@ spring:
     name: edge-service
 zuul:
   ignored-services: '*'
-  prefix: /api
   routes:
     account-service: /account/**
     payment-service: /payment/**
     inventory-service: /inventory/**
     order-service: /order/**
     user-service: /user/**
-    catalog-service: /catalog/**
+    catalog-service: /api/catalog/**
     shopping-cart-service: /shoppingcart/**
 security:
   oauth2:
