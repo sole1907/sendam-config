@@ -43,7 +43,7 @@ spring:
     username: root
     password: dbpass
     initialize: true
-security.ignored: /resources/**
+security.ignored: /resources/**,/v1/register
 eureka:
   instance:
     prefer-ip-address: true
