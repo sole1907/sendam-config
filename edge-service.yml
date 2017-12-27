@@ -52,7 +52,7 @@ spring:
     name: edge-service
 zuul:
   ignored-services: '*'
-  prefix: /api
+  ignoredPatterns: /**/api/**
   routes:
     account-service: /account/**
     payment-service: /payment/**
@@ -65,7 +65,7 @@ security:
   oauth2:
     resource:
       userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
-  ignored: /api/catalog/**,/api/user/uaa/v1/register
+  ignored: /catalog/**,/user/uaa/v1/register
 eureka:
   instance:
     prefer-ip-address: true
