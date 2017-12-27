@@ -58,14 +58,14 @@ zuul:
     payment-service: /payment/**
     inventory-service: /inventory/**
     order-service: /order/**
-    user-service: /user/**
+    user-service: /userservice/**
     catalog-service: /catalog/**
     shopping-cart-service: /shoppingcart/**
 security:
   oauth2:
     resource:
       userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
-  ignored: /user/**
+  ignored: /userservice/**,/catalog/**
 eureka:
   instance:
     prefer-ip-address: true
