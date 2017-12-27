@@ -44,7 +44,7 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:8181/uaa/user
-  ignored: /catalog/**
+  ignored: /catalog/**,/user/uaa/v1/register
 ---
 spring:
   profiles: docker
