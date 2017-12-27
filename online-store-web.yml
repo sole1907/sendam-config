@@ -74,11 +74,6 @@ zuul:
     edge-service:
       path: /api/**
       url: http://${DOCKER_IP:192.168.99.100}:9999
-    auth-service:
-      path: /user/**
-      url: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
-    user-service:
-      path: /users/**
 security:
   enable-csrf: false
   oauth2:
