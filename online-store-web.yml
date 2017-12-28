@@ -72,7 +72,10 @@ zuul:
   ignored-services: '*'
   routes:
     edge-service:
-      path: /api/**,/apis/**
+      path: /api/**
+      url: http://${DOCKER_IP:192.168.99.100}:9999
+    edge-service-api:
+      path: /apis/**
       url: http://${DOCKER_IP:192.168.99.100}:9999
     auth-service:
       path: /user/**
