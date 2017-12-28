@@ -52,6 +52,7 @@ spring:
     name: edge-service
 zuul:
   ignored-services: '*'
+  ignoredPatterns: /**/api/**,/**/apis/**
   routes:
     account-service: /account/**
     payment-service: /payment/**
