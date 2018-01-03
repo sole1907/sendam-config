@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: development
+---
+server:
+  port: 9411
+---
+server:
+  port: 9411
+spring:
+  profiles: docker
