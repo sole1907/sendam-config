@@ -9,3 +9,5 @@ server:
   port: 9411
 spring:
   profiles: docker
+  
+spring.rabbitmq.host: rabbitmq
