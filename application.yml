@@ -34,4 +34,15 @@ logging:
     org.springframework.cloud.sleuth.instrument.messaging.MessagingSpanExtractor: ERROR
     
     org.springframework.security: DEBUG
+    
+spring.rabbitmq:
+  host: localhost
+  port: 5672
+  
+---
+# For deployment in Docker containers
+spring:
+  profiles: docker
+
+spring.rabbitmq.host: rabbitmq
 
