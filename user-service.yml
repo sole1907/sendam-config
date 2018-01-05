@@ -45,7 +45,7 @@ spring:
     initialize: true
   jpa:
     hibernate:
-      ddl-auto: true
+      ddl-auto: create-drop
 security.ignored: /resources/**,/v1/register
 eureka:
   instance:
