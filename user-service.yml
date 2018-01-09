@@ -1,3 +1,16 @@
+security.oauth2.resource.filter-order: 3
+
+security.signing-key: MaYzkSjmkzPC57L
+security.encoding-strength: 256
+security.security-realm: sendam
+
+security.jwt.client-id: sendam-client
+security.jwt.client-secret: XY7kmzoNzl100
+security.jwt.grant-type: password
+security.jwt.scope-read: read
+security.jwt.scope-write: write
+security.jwt.resource-ids: sendam-id
+
 spring:
   profiles:
     active: development
